@@ -1,0 +1,33 @@
+#header-bar {
+    display: inline;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #f4f6fc;
+    height: 122px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5em;
+}
+
+#logo{
+    height: auto;
+    display: inline;
+}
+
+.nav ul li{
+    display: inline;
+    margin: 2em;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #072ac8;
+  
+}
+
+.container-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
