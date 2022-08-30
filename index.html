@@ -2,37 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="./styles/styles.css" />
     
   </head>
   <body>
-    <header>
+<header>
     <div id="header-bar" class="container-space-between">
-        <img id="logo" src="logos/circle.svg" alt="Circle logo" href="index.html">
         <nav class="nav">
+            <img id="logo" src="logos/circle.svg" alt="Circle logo" href="index.html">
                 <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="services.html">Services</a></li>
                 </ul>
-                <button id="click1" href="#">Contact Us</button>
+            <button id="click1" href="#">Contact Us</button>
         </nav>
     </div>
-    <!--
+    
     <div id="header-info" class="container-column">
         <h1>Empower Your</h1>
         <h1>Business With</h1>
         <h1>Stunning Design!</h1>
-        <p>
+        <p id="p1">
           Circle is a digital design and development studio.
-          We design and develop astonishing websites<br>
+          <br>We design and develop astonishing websites</br>
           and mobile apps.
         </p>
-      </div> -->
-        
-  </header>
-<!-- codi per enllaçar JS  <script type="text/javascript" src="./JS/index.js"></script> -->
+        <a href="contact.html"><button id="click2">Get in touch</button></a> <a href="projects.html"><button id="click3" href="#">See our work</button></a>
+      </div>
+</header>
+<section id="client-section" class="container-row">
+    <a href="https://www.airbnb.es/" target="_blank"> <img src="logos/airbnb-logo.svg" alt="Airbnb logo"></a>
+    <a href="https://www.amazon.com/" target="_blank"><img src="logos/amazon-logo.svg" alt="Amazon logo"></a>
+    <a href="https://www.fedex.com/" target="_blank"><img src="logos/fedex-logo.svg" alt="Fedex logo"></a>
+    <a href="https://www.google.es/" target="_blank"><img src="logos/google-logo.svg" alt="Google logo"></a>
+    <a href="https://www.microsoft.com/" target="_blank"><img src="logos/microsoft-logo.svg" alt="Microsoft logo"></a>
+</section>
+<div>
+    <section id="recent-projects">
+        <h2>Recent Projects</h2>
+        <img id="image1" src="projects-section/1.jpg" alt="Simplify">
+        <img id="image2" src="projects-section/2.jpg" alt="Dashcoin">
+        <img id="image3" src="projects-section/3.jpg" alt="Vectorify">
+    </section>
+</div>
+<!-- code to link JS  <script type="text/javascript" src="./JS/index.js"></script> -->
 
   </body>
 </html>
