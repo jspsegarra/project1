@@ -2,9 +2,9 @@ html{
     background-color: #f4f6fc;
 }
 
+/* nav bar */
+
 #header-bar {
-    display: inline;
-    
     top: 0px;
     left: 0px;
     height: 100px;
@@ -20,11 +20,11 @@ html{
 
 .nav ul li{
     background-color: #f4f6fc;
-    display: inline;
+    display: inline-flex;
     margin-left: 8em;
     margin-right: 6em;
-    text-shadow: 0.1em 0.1em 0.2em #b9b9b9;
-    align-items: center;  
+    text-shadow: 0.1em 0.1em 0.2em #b9b9b9; 
+    flex-shrink: [];
 }
 nav ul li a{    
     text-decoration: none;
@@ -32,6 +32,33 @@ nav ul li a{
 }
 ul{
     display: inline;
+}
+
+/* header */
+
+.container-row{
+    display: flex;
+}
+.container-column{
+    display: inline-block;
+}
+
+#hero{
+    max-width: 450px;
+    max-height: 480px;
+    padding-left: 100px;
+}
+#card1{
+    max-width: 300px;
+    max-height: 200px;
+    position: absolute;
+    padding-left: 100px;
+}
+#card2{
+    max-width: 300px;
+    max-height: 200px;
+    position: absolute;
+    padding-top: 320px;
 }
 
 #click1{
@@ -49,12 +76,15 @@ ul{
 #p1{
     color: grey;
 }
+
+#header-info{
+    padding-top: 2em;
+    padding-left: 10em;
+}
 #click2{
     color: white;
     background: #072AC8;
     width: 150px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     border: none;
     text-align: center;
     height: 52px;
@@ -63,29 +93,13 @@ ul{
     color: grey;
     background: none;
     width: 150px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     border: none;
     text-align: center;
     height: 52px;
 }
 
-.container-space-between{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-#header-info{
-    padding-top: 15em;
-    padding-left: 10em;
-}
-container-row{
-    display: inline;
-    flex-direction: row;
-    align-items: center;
-    margin: 150 px;
-}
+/* the rest */
 
 #client-section{
     display: flex;
@@ -95,16 +109,55 @@ container-row{
     margin: 5em;
 }
 
+#text-projects{
+    margin-left: 228px;
+    padding-top: 30px;
+}
 #recent-projects{
-    margin: 100px;
-    padding-top: 40px;
+    text-align: center;
+    justify-content: space-between
 }
 
-#image1, #image2, #image3{
-    display: inline;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 340px;
-    max-height: 240px;
+#image1{
+    width: 240px;
+    height: 200px;    
+}
+#image2{
+    width: 240px;
+    height: 200px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#image3{
+    width: 240px;
+    height: 200px;
 }
 
+#orbit-layout{
+    margin-top: 80px;
+    text-align: center;
+    background-color: #292E47;
+    width: 1000px;
+    height: 500px;
+}
+#orbit-image{
+    width: 1000px;
+    height: auto;
+}
+#text-testimonial{
+    padding-top: 5em;
+    text-align: center;
+    color: white;
+}
+#p2{
+    color: #FFC600;
+}
+#p3{
+    color: #A2D6F9;
+    font-size: 12px;
+}
+#p4{
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+}

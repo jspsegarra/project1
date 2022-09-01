@@ -4,23 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="./styles/styles.css" />
-    
   </head>
   <body>
-<header>
-    <div id="header-bar" class="container-space-between">
-        <nav class="nav">
+    <header>
+      <section>
+        <div id="header-bar" class="container-space-between">
+          <nav class="nav">
             <img id="logo" src="logos/circle.svg" alt="Circle logo" href="index.html">
-                <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="services.html">Services</a></li>
-                </ul>
-                <a href="contact.html"><button id="click1">Contact Us</button></a>
-        </nav>
-    </div>
-    
-    <div id="header-info" class="container-column">
+              <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="services.html">Services</a></li>
+              </ul>
+            <a href="contact.html"><button id="click1">Contact Us</button></a>
+          </nav>
+        </div>
+  </section>
+  <section class="container-row">
+    <div id="header-info">
+      <article  id="article1" class="container-column">
         <h1>Empower Your</h1>
         <h1>Business With</h1>
         <h1>Stunning Design!</h1>
@@ -30,26 +32,46 @@
           and mobile apps.
         </p>
         <a href="contact.html"><button id="click2">Get in touch</button></a> <a href="projects.html"><button id="click3" href="#">See our work</button></a>
+      </article>
+      <article class="container-column">
+        <img id="card1" src="hero-section/card-1.png" alt="card">
+        <img id="hero" src="hero-section/hero-image.png" alt="Hero">
+        <img id="card2" src="hero-section/card-2.png" alt="card">
+      </article>
       </div>
+    </section>     
 </header>
-<section id="client-section" class="container-row">
+<section id="client-section">
     <a href="https://www.airbnb.es/" target="_blank"> <img src="logos/airbnb-logo.svg" alt="Airbnb logo"></a>
     <a href="https://www.amazon.com/" target="_blank"><img src="logos/amazon-logo.svg" alt="Amazon logo"></a>
     <a href="https://www.fedex.com/" target="_blank"><img src="logos/fedex-logo.svg" alt="Fedex logo"></a>
     <a href="https://www.google.es/" target="_blank"><img src="logos/google-logo.svg" alt="Google logo"></a>
     <a href="https://www.microsoft.com/" target="_blank"><img src="logos/microsoft-logo.svg" alt="Microsoft logo"></a>
 </section>
-<div id="projects-box">
-    <section id="recent-projects">
-    <h2>Recent Projects</h2>
-        <ul>
-            <li><img id="image1" src="projects-section/1.jpg" alt="Simplify"></li>
-            <li><img id="image2" src="projects-section/2.jpg" alt="Dashcoin"></li>
-            <li><img id="image3" src="projects-section/3.jpg" alt="Vectorify"></li>
-        </ul>
-    </section>
-</div>
+<section>
+  <h2 id="text-projects">Recent Projects</h2>
+  <div id="recent-projects">
+        <img id="image1" src="projects-section/1.jpg" alt="Simplify">
+        <img id="image2" src="projects-section/2.jpg" alt="Dashcoin">
+        <img id="image3" src="projects-section/3.jpg" alt="Vectorify">
+  </div>
+</section>
+<section>
+  <div  id="orbit-layout">
+    <article>
+      <h2 id="text-testimonial">Hear What Our Clients Have to Say</h2>
+      <br>
+      <br>
+      <p id="p2">"Circle helped us through every stage of our startup.</p>
+      <p id="p2">We really enjoyed working with you."</p>
+      <br>
+      <br>
+      <p id="p3">Kristin Watson</p>
+      <p id="p4"><a href="https://www.booking.com/" style="text-decoration: none">Booking.com</a></p>
+      <img id="orbit-image" src="testimonial-section/orbit.png" alt="orbit">
+    </article>
+  </div>
+</section>
 <!-- code to link JS  <script type="text/javascript" src="./JS/index.js"></script> -->
-
   </body>
 </html>
