@@ -275,13 +275,17 @@ ul {
         display: flex;
         margin: 80px;
     }
-
+    .navbar{
+        display: flex;
+    }
+    #logo-pos, .nav{
+        display: inline-flex
+    }
     ul {
         display: flex;
     }
     #big-letters{
         display: block;
-        position: center;
         margin-top: 20px;
         font-size: 20px;
     }
@@ -289,7 +293,8 @@ ul {
         margin-bottom: 80px;
     }
     #header-info{
-        display:block;
+        display: block;
+        
     }
     #hero{
         display: block;
