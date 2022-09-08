@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="./styles/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="container-row navbar">
+  <header class="navbar">
     <div id="logo-pos">
-      <img class="container-column" src="logos/circle.svg" alt="Circle logo" href="index.html">
+      <img src="logos/circle.svg" alt="Circle logo" href="index.html">
     </div>
     <nav class="nav">
       <ul>
@@ -22,41 +22,43 @@
         <li><a href="services.html">Services</a></li>
       </ul>
     </nav>
-    <div class="container-column" id="header3">
+    <div id="header3">
       <a href="contact.html"><button id="click1">Contact Us</button></a>
     </div>
   </header>
-  <section>
-    <div class="container-row" id="header-info">
-      <article id="article1" class="container-column">
+  <section class="section-info">
+    <div id="header-info">
+      <article>
         <h1 id="big-letters">Empower Your<br>
           Business With<br>
           Stunning Design!</h1>
         <p id="p1">
           Circle is a digital design and development studio.
           <br>We design and develop astonishing websites
-          and mobile apps.
+          <br>and mobile apps.
         </p>
-        <a href="contact.html"><button id="click2">Get in touch</button></a> <a href="projects.html"><button id="click3"
-            href="#">See our work</button></a>
+        <a href="contact.html"><button id="click2">Get in touch</button></a> 
+        <a href="projects.html"><button id="click3">See our work</button></a>
       </article>
-      <article class="container-column">
-        <img id="card1" src="hero-section/card-1.png" alt="card">
-        <img id="card2" src="hero-section/card-2.png" alt="card">
-        <img id="hero" src="hero-section/hero-image.png" alt="Hero">
+    </div>
+    <div id="header-info2">
+      <article id="article1">
+          <img id="card1" src="hero-section/card-1.png" alt="card">
+          <img id="card2" src="hero-section/card-2.png" alt="card">
+          <img id="hero" src="hero-section/hero-image.png" alt="Hero">
       </article>
     </div>
   </section>
   <section id="client-section">
-    <a href="https://www.airbnb.es/" target="_blank"> <img src="logos/airbnb-logo.svg" alt="Airbnb logo"></a>
-    <a href="https://www.amazon.com/" target="_blank"><img src="logos/amazon-logo.svg" alt="Amazon logo"></a>
-    <a href="https://www.fedex.com/" target="_blank"><img src="logos/fedex-logo.svg" alt="Fedex logo"></a>
-    <a href="https://www.google.es/" target="_blank"><img src="logos/google-logo.svg" alt="Google logo"></a>
-    <a href="https://www.microsoft.com/" target="_blank"><img src="logos/microsoft-logo.svg" alt="Microsoft logo"></a>
+    <a href="https://www.airbnb.es/" target="_blank"> <img id="logos" src="logos/airbnb-logo.svg" alt="Airbnb logo"></a>
+    <a href="https://www.amazon.com/" target="_blank"><img id="logos" src="logos/amazon-logo.svg" alt="Amazon logo"></a>
+    <a href="https://www.fedex.com/" target="_blank"><img id="logos" src="logos/fedex-logo.svg" alt="Fedex logo"></a>
+    <a href="https://www.google.es/" target="_blank"><img id="logos" src="logos/google-logo.svg" alt="Google logo"></a>
+    <a href="https://www.microsoft.com/" target="_blank"><img id="logos" src="logos/microsoft-logo.svg" alt="Microsoft logo"></a>
   </section>
-  <section>
+  <section id="projects">
     <h2 id="text-projects">Recent Projects</h2>
-    <div class="container-row" id="recent-projects">
+    <div id="recent-projects">
       <img id="image1" src="projects-section/1.jpg" alt="Simplify">
       <img id="image2" src="projects-section/2.jpg" alt="Dashcoin">
       <img id="image3" src="projects-section/3.jpg" alt="Vectorify">
@@ -83,7 +85,7 @@
       <a href="#">Learn more</a>
     </div>
   </section>
-  <!-- <section>
+ <!-- <section>
     <div id="orbit-layout">
       <article>
         <img id="emoji1" src="testimonial-section/memoji-1.png" alt="emoji1">
@@ -108,7 +110,7 @@
         <img id="emoji4" src="testimonial-section/memoji-4.png" alt="emoji4">
       </article>
     </div>
-  </section> -->
+  </section> 
   <section>
     <h2 id="text-services">Our Services</h2>
     <div id="our-services">

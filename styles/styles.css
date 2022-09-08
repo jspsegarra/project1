@@ -3,150 +3,124 @@ body {
     margin: 0px;
 }
 
+
 /* header */
 
-.container-row {
-    display: flex;
-}
-
-.container-column {
-    direction: column;
-}
-
 #logo-pos {
-    margin: 50px 80px 90px 150px;
+    display: inline-flex;
 }
-
-.nav {
+.navbar{
     display: flex;
     justify-content: space-around;
+    padding: 0px 40px;
+    align-items: center;
+}
+.navbar img{
+    width: 60px;
 }
 
 .nav ul li {
     background-color: #f4f6fc;
     display: inline-flex;
     text-shadow: 0.1em 0.1em 0.2em #b9b9b9;
-    margin: 0px 20px;
+    padding-right: 30px;
 }
-
 nav ul li a {
     text-decoration: none;
     color: #072ac8;
 }
-
-ul {
-    margin-top: 50px;
-    margin-left: 100px;
-}
-
-#header3 {
-    margin-top: 34px;
-    margin-left: 100px;
-}
-
-/* main info */
-
-#big-letters {
-    font-size: 40px;
-    margin-top: 100px;
-}
-#hero {
-    max-width: 450px;
-    max-height: 480px;
-    padding-left: 100px;
-}
-#card1 {
-    max-width: 300px;
-    max-height: 200px;
-    position: absolute;
-    padding-left: 100px;
-}
-#card2 {
-    max-width: 300px;
-    max-height: 200px;
-    position: absolute;
-    padding-top: 320px;
-    padding-left: 350px;
-}
-
 #click1 {
     box-shadow: 0.2em 0.5em 0.5em #b9b9b9;
     color: white;
     background: #072AC8;
-    width: 150px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 10px 20px;
     border: none;
-    text-align: center;
-    height: 52px;
+    text-align: center;   
+}
+
+/* main info */
+
+.section-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#big-letters {
+    font-size: 30px;
+}
+#hero{
+    width: 450px;
+    height: 450px;
+}
+#article1{
+    position: relative;
+}
+#card1 {
+    position: absolute;
+    width: 220px;
+    top: -30px;
+    left: 0px;
+}
+#card2 {
+    position: absolute;
+    width: 220px;
+    bottom: -60px;
+    right: -30px;
 }
 
 #p1 {
     color: #6B708D;
 }
 
-#header-info {
-    padding-top: 2em;
-    padding-left: 10em;
-}
-
 #click2 {
     color: white;
     background: #072AC8;
-    width: 150px;
+    padding: 10px 20px;
     border: none;
     text-align: center;
-    height: 52px;
 }
 
 #click3 {
     color: #6B708D;
     background: none;
-    width: 150px;
+    padding: 10px 20px;
     border: none;
     text-align: center;
-    height: 52px;
 }
 
 
 /* clients logos */
 
 #client-section {
+    margin-top: 100px;
     display: flex;
-    justify-content: space-between;
-    margin: 80px 150px;
+    justify-content: space-evenly;
+    filter: grayscale(100%);
 }
 
 /* projects */
 
+#projects{
+    margin-top: 100px;
+}
 #text-projects {
-    margin-left: 228px;
-    padding-top: 30px;
+    display:flex;
+    margin-left: 210px;
 }
 
 #recent-projects {
-    text-align: center;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#image1 {
+#image1, #image2, #image3 {
     width: 240px;
     height: 200px;
 }
 
-#image2 {
-    width: 240px;
-    height: 200px;
-}
-
-#image3 {
-    width: 240px;
-    height: 200px;
-}
-
-#white-square1,
-#white-square2,
-#white-square3 {
+#white-square1, #white-square2, #white-square3 {
     background-color: white;
     margin-top: -18px;
     margin-left: 71px;
@@ -159,7 +133,7 @@ ul {
 
 /* ORBIT */
 
-#orbit-layout {
+/* #orbit-layout {
     margin-top: 80px;
     text-align: center;
     background-color: #292E47;
@@ -173,7 +147,7 @@ ul {
     height: auto;
     padding-bottom: ;
 }*/
-#text-testimonial {
+/*#text-testimonial {
     padding-top: 0.1em;
     text-align: center;
     color: white;
@@ -208,7 +182,7 @@ ul {
 }
 
 #emoji2 {
-    /*position: absolute;*/
+    position: absolute;
     padding-right: 400px;
     padding-top: 70px;
 }
@@ -228,7 +202,7 @@ ul {
 
 /* OUR SERVICES */
 
-#text-services {
+/*#text-services {
     margin-top: 150px;
     margin-left: 150px;
 }
@@ -255,14 +229,14 @@ ul {
 }
 
 /* NEWSLETTER */
-#newsletter {
+/*#newsletter {
     display: block;
 }
 
 #yellow-square {
     background-color: #FFC600;
     text-align: center;
-}
+} 
 
 /* RESPONSIVE */
 
@@ -270,50 +244,59 @@ ul {
     #click1 {
         display: none;
     }
+  .navbar{
+        padding: 0px 20px;
+    }
+    .nav ul li {
+        padding-right: 20px;
+    }
 
-    #client-section {
-        display: flex;
-        margin: 80px;
-    }
-    .navbar{
-        display: flex;
-    }
-    #logo-pos, .nav{
-        display: inline-flex
-    }
-    ul {
-        display: flex;
-    }
-    #big-letters{
+    /* MAIN INFO */ 
+
+    .section-info{
         display: block;
-        margin-top: 20px;
-        font-size: 20px;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 25px;
     }
-    #click3{
-        margin-bottom: 80px;
-    }
-    #header-info{
-        display: block;
-        
-    }
+     #header-info2{
+        margin-top: 25px;
+    } 
     #hero{
-        display: block;
-        max-width: 450px;
-        max-height: 480px;
-        padding-left: 0px;
+        width: 280px;
+        height: 280px;
     }
     #card1 {
-        max-width: 300px;
-        max-height: 200px;
         position: absolute;
-        padding-left: 0px;
+        width: 120px;
+        top: 10px;
+        left: 40px;
     }
     #card2 {
-        max-width: 300px;
-        max-height: 200px;
         position: absolute;
-        padding-top: 350px;
-        padding-left: 250px;
+        width: 120px;
+        bottom: -20px;
+        right: 50px;
     }
 
+    /* CLIENTS */
+
+    #client-section {
+        margin-top: 50px;
+    }
+    #logos{
+        width: 40px;
+    }
+
+    /* recent projects */
+
+    #text-projects {
+        display: block;
+        text-align: center;
+    }
+    #recent-projects {
+        display: block;
+        text-align: center;
+        margin: 0px;
+    }
 }
