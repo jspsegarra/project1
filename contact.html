@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div id="logo-pos">
+            <img src="logos/circle.svg" alt="Circle logo" href="index.html">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <div id="header3">
+            <a href="contact.html"><button id="click1">Contact Us</button></a>
+        </div>
+    </header>
+    <main>
+        <section class="contacta">
+            <div>
+                <h2 id="main-contact">Contact Us</h2>
+            </div>
+        </section>
+        <section>
+            <form id="form-container">
+                <fieldset class="fieldset">
+                    <div id="box-form">
+                        <label for="User">Full Name *</label>
+                    </div>
+                        <div id="box-form2">
+                        <input id="user" name="name" type="text" placeholder="Enter your name">
+                    </div>
+                    <div id="box-form3">
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="Enter your Email adress">
+                        </div>
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" type="tel" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="comment">Message</label>
+                    </div>
+                    <div>
+                        <textarea id="comment" name="comment" rows="10"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+                    <div>
+                        <input id="button-c" type="submit" value="Submit">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section class="foot" id="space">
+            <div id="logo-foot">
+                <img src="logos/circle.svg" alt="Circle logo" href="index.html">
+                <div id="adress">
+                    <p>2972 Westheimer Rd. Santa Ana, <br>Illinois 85486 </p>
+                </div>
+            </div>
+            <article>
+                <div>
+                    <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script type="text/javascript" src="./JS/index.js"></script>
+</body>
+
+</html>
