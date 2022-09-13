@@ -350,6 +350,37 @@ nav ul li a {
     display: block;
 }
 
+
+
+/* !!!!!!PROJECTS PAGE!!!!!!!!!!! */
+
+.simplify{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#main-title{
+    font-size: 50px;
+}
+#second-title{
+    color: grey;
+}
+#date-completed{
+    display: inline-flex;
+    padding-top: 120px;
+}
+.box-image{
+    display: flex;
+    align-items: center;
+}
+#big-image{
+    width: 900px;
+    height: 450px;  
+}
+.project9{
+    margin-top: 100px;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 600px) {
@@ -480,4 +511,12 @@ nav ul li a {
 
     /* FOOTER */
 
+    #big-image{
+        width: 400px;
+        height: 250px;  
+    }
+    #date-completed{
+        display: inline-flex;
+        padding-right: none;
+    }
 }
