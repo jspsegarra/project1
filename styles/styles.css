@@ -47,6 +47,7 @@ nav ul li a {
     padding: 10px 20px;
     border: none;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -97,6 +98,7 @@ nav ul li a {
     padding: 10px 20px;
     border: none;
     text-align: center;
+    cursor: pointer;
 }
 
 #click3 {
@@ -105,6 +107,7 @@ nav ul li a {
     padding: 10px 20px;
     border: none;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -327,6 +330,7 @@ nav ul li a {
     text-align: center;
     width: 120px;
     height: 80px;
+    cursor: pointer;
 }
 
 
@@ -354,28 +358,84 @@ nav ul li a {
 
 /* !!!!!!PROJECTS PAGE!!!!!!!!!!! */
 
-.simplify{
-    margin-top: 100px;
+.projectPage {
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 0 30px;
 }
-#main-title{
-    font-size: 50px;
+.projectPage > h1 {
+    color: #292e47;
+    font-size: 2.5em;
+    line-height: 68px;
+    margin-top: 20px;
 }
-#second-title{
-    color: grey;
+.projectPage > h1::first-letter {
+    text-transform: capitalize;
 }
-#date-completed{
-    display: inline-flex;
-    padding-top: 120px;
-}
-.box-image{
+.projectPage_type {
+    margin: 30px 0 40px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
-#big-image{
-    width: 900px;
-    height: 450px;  
+.projectPage_type > h3 {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    line-height: 26px;
+    color: #6b708d;
+}
+
+.projectPage_type > div {
+    color: #292e47;
+    line-height: 20px;
+    font-size: 1.25em;
+}
+.projectDate {
+    color: #6b708d;
+}
+
+.image_wrapper {
+    position: relative;
+}
+.projectPage_img {
+    width: 100%;
+    height: 444px;
+    /* object-fit: cover; */
+    /* vertical-align: middle; */
+    display: inline-block;
+}
+
+.projectPage_imgShadow {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+
+    z-index: -1;
+    width: 100%;
+    height: 444px;
+    opacity: 0.4;
+    filter: saturate(200%) blur(20px);
+}
+
+.project_textDescription {
+    color: #292e47;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    margin: 80px 0 20px;
+    padding: 0;
+}
+.project_textDescription::first-letter {
+    text-transform: capitalize;
+}
+.projectPage_img {
+    width: 100%;
+    height: 444px;
+    object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
 }
 .project9{
     margin-top: 100px;
@@ -385,35 +445,85 @@ nav ul li a {
 /*     !!!! CONTACT US PAGE   !!!!!!!!!!!!!!                */
 
 .contacta{
-    margin-top: 100px;
+    padding: 0;
+    margin: 80px 0 80px;
 }
-.fieldset{
-    border-style: none;
+.contact_form{
+    display: grid;
+    max-width: 100%;
+    gap: 30px;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "name"
+        "email"
+        "phone"
+        "comment"
+        "btn";
+}
+.name {
+    grid-area: name;
+}
+.email {
+    grid-area: email;
+}
+.phone {
+    grid-area: phone;
+}
+.message {
+    grid-area: message;
+}
+.label_input_wraper {
     display: flex;
+    flex-direction: column;
 }
-#user, #email, #phone, #comment, #button-c{
-    border-style: none;
+.contact-title {
+    margin-bottom: 15px;
+    color: #6b708d;
+    font-weight: 400;
 }
-#user{
-    width: 100%;
-}
-#main-contact{
-    font-size: 50px;
-}
-#box-form{
-    display: block;
-}
-#box-form2{
-    display: block;
-}
-#button-c{
-    color: white;
-    background: #072AC8;
-    border: none;
-    text-align: center;
+.contact_text-field {
     width: 100%;
     height: 70px;
+    padding-left: 20px;
+    border: none;
+    background-color: rgba(107, 112, 141, 0.1);
 }
+.contact_text-field:focus {
+    outline: none;
+    border: 1px solid #f2f4fc;
+    box-shadow: 0 0 5px #6b708d;
+}
+.textTarea_field {
+    height: 200px;
+    resize: none;
+    padding-top: 20px;
+}
+.textTarea_field::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.button-c {
+    background-color: #072ac8;
+    height: 80px;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    grid-area: btn;
+}
+.formDome {
+    color: green;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+.formFail {
+    color: red;
+    font-size: 1.5em;
+    margin-top: 20px;
+    display: none;
+}
+
 
 /* RESPONSIVE */
 
@@ -553,4 +663,11 @@ nav ul li a {
         display: inline-flex;
         padding-right: none;
     }
+}
+
+/* CONTACT PAGE!!!!!!--------------------------------------  */
+
+.contacta {
+    padding: 0 30px;
+    margin: 80px 0 100px;
 }

@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <title>Contact | Circle Agency</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="./logos/circle.svg" />
 </head>
 
 <body>
@@ -33,36 +35,42 @@
             </div>
         </section>
         <section>
-            <form id="form-container">
-                <fieldset class="fieldset">
-                    <div id="box-form">
-                        <label for="User">Full Name *</label>
+            <form id="form-container" name="form-container" data-name="Email Form" method="post" class="contact_form"
+                aria-label="Email Form" action="/action_page.php" target="_blank">
+                <fieldset>
+                    <div id="box-form" class="label_input_wraper name">
+                        <label for="Name" class="contact-title">Full Name *</label>
+                        <input id="name" class="contact_text-field" name="name" type="text"
+                            placeholder="Enter your full name" required="" maxlength="256" data-name="Name">
                     </div>
-                        <div id="box-form2">
-                        <input id="user" name="name" type="text" placeholder="Enter your name">
+                    <div class="label_input_wraper email">
+                        <label for="email" class="contact-title">Email</label>
+                        <input id="email" class="contact_text-field" name="email" maxlength="256" type="email"
+                            data-name="Name 2" placeholder="Enter your Email adress">
                     </div>
-                    <div id="box-form3">
-                        <div>
-                            <label for="email">Email</label>
-                            <input id="email" name="email" type="email" placeholder="Enter your Email adress">
-                        </div>
-                        <div>
-                            <label for="phone">Phone</label>
-                            <input id="phone" name="phone" type="tel" placeholder="Enter your phone number">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="comment">Message</label>
+                    <div class="label_input_wraper phone">
+                        <label for="phone" class="contact-title">Phone</label>
+                        <input id="phone" class="contact_text-field" name="phone" data-name="Name 3" type="tel"
+                            placeholder="Enter your phone number">
                     </div>
                     <div>
-                        <textarea id="comment" name="comment" rows="10"
-                            placeholder="Write your message here..."></textarea>
+                        <label for="comment" class="contact-title">Message *</label>
+                        <textarea id="comment" name="comment" data-name="comment" maxlength="5000" required=""
+                            placeholder="Write your message here..."
+                            class="contact_text-field textTarea_field"></textarea>
                     </div>
-                    <div>
-                        <input id="button-c" type="submit" value="Submit">
-                    </div>
+                    <button type="submit" value="" data-wait="Please wait..." class="button-c" type="submit">
+                        Submit
+                    </button>
                 </fieldset>
             </form>
+            <div class="formDome">
+                <div id="formDome"></div>
+            </div>
+            <div class="formFail">
+                <div>
+                    Oops! Something went wrong while submitting the form.
+                </div>
         </section>
         <section class="foot" id="space">
             <div id="logo-foot">
